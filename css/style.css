@@ -1,0 +1,78 @@
+@font-face {
+    font-family: custom;
+    src: url('../assets/Winky Milky.ttf');
+}
+
+body {
+    font-family: custom;
+    text-align: center;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.panel {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    padding: 20px;
+    width: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+.panel-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.version-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.chapter img {
+    width: 300px;
+}
+
+.chapter {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ch1-bg {
+    background-image: url("assets/images/ch1.png");
+}
+
+.ch2-bg {
+    background-image: url("assets/images/ch2.png");
+}
+
+.ch3-bg {
+    background-image: url("assets/images/ch3.png");
+}
+
+.lost-bg {
+    background-image: url("assets/images/lost-files_bg.png");
+}
+
+.origin-bg {
+    background-image: url("assets/images/originBG.png");
+}
+/*LOL, solo tenia que actualizar los creditos y termine añadiendo otro boton XD */

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Corruption</title>
+    <link rel="icon" href="assets/win_icon.png">
+    <style>
+        @font-face {
+            font-family: custom;
+            src: url("assets/Winky Milky.ttf");
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: custom;
+        }
+        body {
+            overflow: hidden;
+            background: black;
+        }
+        section {
+            position: absolute;
+            inset: 0;
+            display: none;
+            color: white;
+            padding: 60px;
+            overflow-y: auto;
+        }
+        section.active {
+            display: block;
+        }
+        .codigos, .versiones, .conceptual {
+            overflow-y: auto;
+        }
+        .chapter-header {
+            max-width: 600px;
+            position: relative;
+            z-index: 1;
+        }
+        .chapter-header p {
+            white-space: pre-line;
+            line-height: 1.5;
+        }
+        section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #8a0000;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            image-rendering: pixelated;
+        }
+        .gallery img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 15px #8a0000;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #8a0000;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back {
+            background: #333;
+        }
+        .disabled {
+            background: #444;
+            pointer-events: none;
+        }
+        .menu-content {
+            text-align: center;
+            margin-top: 100px;
+            position: relative;
+            z-index: 1;
+        }
+        .notas-btn {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: #222;
+            padding: 8px 15px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <a href="#versiones" class="notas-btn">Notas de version</a>
+
+    <section id="menu" class="active" style="background:black;">
+        <div class="menu-content">
+            <h1>Virus Corruption</h1>
+            <a href="#chapters" class="btn">Descargar mod</a><br>
+            <a href="#codigos" class="btn">Codigos</a><br>
+            <a href="#conceptual" class="btn">Arte Conceptual</a><br>
+            <a href="#creditos" class="btn">Creditos</a>
+        </div>
+    </section>
+
+    <section id="chapters" style="background:black;">
+        <div class="chapter-header">
+            <h1>Chapters</h1>
+            <a href="#ch1" class="btn">Capitulo 1</a><br>
+            <a href="#ch2" class="btn">Capitulo 2</a><br>
+            <a href="#ch3" class="btn">Capitulo 3</a><br>
+            <a href="#lost" class="btn">Lost Files</a><br>
+            <a href="#origin" class="btn">Origin</a>
+            <br><a href="#menu" class="btn back">← Volver</a>
+        </div>
+    </section>
+
+    <section id="conceptual" class="conceptual" style="background:black;">
+        <div class="chapter-header">
+            <h1>Arte Conceptual</h1>
+            <p>56 ilustraciones y sprites del desarrollo de Virus Corruption</p>
+            
+            <div class="gallery" id="conceptualGallery"></div>
+
+            <br><a href="#menu" class="btn back">← Volver al Menú</a>
+        </div>
+    </section>
+
+    <section id="ch1" style="background: url('assets/images/ch1.png') center/cover no-repeat;">
+        <div class="chapter-header">
+            <h1>Capitulo 1</h1>
+            <p>Un dia tranquilo en el pueblo costero Un virus llego, llego una entidad desconocida por la humanidad, invadiendo e infectando a la gente. Todo parecia perdido pero de una manera extraña hubo un grupo de individuos que tras haber caido, uno de ellos en el interior de su subconciente logro salir del control total "eyes" al darse cuenta interfirio para evitar que se logre despertar, fallando, aquel heroe cumplio el objetivo y logro regresar todo a la normalidad.</p>
+            <a href="https://drive.google.com/file/d/1E-9JJ1GN0BEY_-2LC34l1w7EBqUYGKlU/view?usp=sharing" class="btn">Descargar</a>
+            <br><a href="#chapters" class="btn back">Volver</a>
+        </div>
+    </section>
+
+    <section id="ch2" style="background: url('assets/images/ch2.png') center/cover no-repeat;">
+        <div class="chapter-header">
+            <h1>Capitulo 2</h1>
+            <p>Tras la caida de "eyes" la entidad lider llamo a una segunda entidad llamado "trap" con la unica mision que es, evitar que aquel entrometido cumpla el objetivo, creando una nueva linea temporal, pensaba que todo estaba resuelto para que el virus se expanda, pero no contaba que trap se confiara y que tras una pelea axexino se liberara y ayudara a la liberación del pueblo, pero en lo que se liberaba, alguien intentando ser un heroe fracaso y termino cayendo ante el virus y como ultimo acto para evitar el caos, sedio el rol de administracion a otra persona, que despues de una pelea se termino infectando, con esto, trap penso que axexino no tendria oportunidad que ganar esta vez pero en su contrario, libero a los ultimos que faltaban para acabar con el virus por una vez mas.</p>
+            <a href="https://drive.google.com/file/d/1gyh_gslrrmLe2O3Om0vRJuZIzeKzR1PG/view?usp=sharing" class="btn">Descargar</a>
+            <br><a href="#chapters" class="btn back">Volver</a>
+        </div>
+    </section>
+
+    <section id="ch3" style="background: url('assets/images/ch3.png') center/cover no-repeat;">
+        <div class="chapter-header">
+            <h1>Capitulo 3</h1>
+            <p>Demo proximamente para noviembre</p>
+            <div class="btn disabled">No disponible</div>
+            <br><a href="#chapters" class="btn back">Volver</a>
+        </div>
+    </section>
+
+    <section id="lost" style="background: url('assets/images/lost-files_bg.png') center/cover no-repeat;">
+        <div class="chapter-header">
+            <h1>Lost Files</h1>
+            <p>Proximamente</p>
+            <div class="btn disabled">No disponible</div>
+            <br><a href="#chapters" class="btn back">Volver</a>
+        </div>
+    </section>
+
+    <section id="origin" style="background: url('assets/images/originBG.png') center/cover no-repeat;">
+        <div class="chapter-header">
+            <h1>Origin</h1>
+            <p>Proximamente</p>
+            <div class="btn disabled">No disponible</div>
+            <br><a href="#chapters" class="btn back">Volver</a>
+        </div>
+    </section>
+
+    <section id="codigos" class="codigos">
+        <div class="chapter-header">
+            <h1>Codigos</h1>
+            <input id="codeInput" type="text" placeholder="Ingresa el código">
+            <br><br>
+            <button class="btn" onclick="checkCode()">Aceptar</button>
+            <div id="resultado" style="margin-top: 15px;"></div>
+            <br><a href="#menu" class="btn back">Volver</a>
+        </div>
+    </section>
+
+    <section id="creditos">
+        <div class="chapter-header">
+            <h1>Creditos</h1>
+            <p>Desarrollador > Monito<br>
+               Beta Tester > nomu_sica > AxeXinoV2_</p>
+            <br><a href="#menu" class="btn back">Volver</a>
+        </div>
+    </section>
+
+    <section id="versiones" class="versiones">
+        <div class="chapter-header">
+            <h1>Notas de Version</h1>
+            <p>
+                <b>ver 1.0.9</b> Nuevo boton de arte conceptual y demas - se optimizo el codigo del HTML<br>
+                <b>ver 1.0.8</b> Se re estructuro toda la pagina web<br>
+                <b>ver 1.0.7.1</b> Arreglos menores<br>
+                <b>ver 1.0.7</b> Se agrego un boton con codigos<br>
+                <b>ver 1.0.6.1</b> Correción al ingresar al apartado de Origin<br>
+                <b>ver 1.0.6</b> Se agrego un nuevo boton llamado "Extras" Se añadieron Lost Files y Origin.<br>
+                <b>ver 1.0.5</b> Se agrego musica<br>
+                <b>ver 1.0.4</b> Fix capítulo 2<br>
+                <b>ver 1.0.3</b> Creditos añadidos<br>
+                <b>ver 1.0.2</b> Mejoras visuales<br>
+                <b>ver 1.0.1</b> Corrección scroll
+            </p>
+            <br><a href="#menu" class="btn back">Volver</a>
+        </div>
+    </section>
+
+    <script>
+        function showSection(){
+            const id = location.hash.replace("#","") || "menu";
+            document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+            const section = document.getElementById(id);
+            if(section) section.classList.add("active");
+        }
+
+        window.addEventListener("hashchange", showSection);
+        window.addEventListener("load", () => {
+            showSection();
+            loadConceptualArt();
+        });
+
+        function loadConceptualArt() {
+            const gallery = document.getElementById("conceptualGallery");
+            gallery.innerHTML = "";
+            
+            for(let i = 1; i <= 56; i++) {
+                const img = document.createElement("img");
+                img.src = `assets/concept/${i}.png`;
+                img.alt = `Arte Conceptual ${i}`;
+                img.loading = "lazy";
+                gallery.appendChild(img);
+            }
+        }
+
+        function checkCode(){
+            let code = document.getElementById("codeInput").value.toUpperCase().trim();
+            let res = document.getElementById("resultado");
+            
+            res.innerHTML = ""; // Limpiar anterior
+
+            if(code === "TR4P"){
+                window.open("https://drive.google.com/file/d/1dawXByTMScKn7Pl_YgMBcuxCWzIMm9w2/view?usp=sharing");
+            } 
+            else if(code === "3Y3"){
+                res.innerHTML = "<img src='assets/codes/eye_secrets.png' style='max-width:100%; border:2px solid #8a0000;'>";
+            } 
+            else if(code === "HEROX"){
+                res.innerHTML = "<img src='assets/codes/herox_secrets.png' style='max-width:100%; border:2px solid #8a0000;'>";
+            } 
+            else if(code === "MONITO"){
+                res.innerHTML = "<img src='assets/codes/monito_secrets.png' style='max-width:100%; border:2px solid #8a0000;'>";
+            } 
+            else if(code === "AXE"){
+                res.innerHTML = "<img src='assets/codes/axe_secrets.png' style='max-width:100%; border:2px solid #8a0000;'>";
+            } 
+            else if(code === "V0ID"){
+                res.innerHTML = "<img src='assets/codes/tvStatic.gif' style='max-width:100%; border:2px solid #8a0000;'>";
+            } 
+            else {
+                res.innerHTML = "<p style='color:#ff6666;'>Código Inválido</p>";
+            }
+        }
+    </script>
+</body>
+</html>
